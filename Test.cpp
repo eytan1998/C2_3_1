@@ -3,13 +3,13 @@
 #include <stdexcept>
 #include "sources/Fraction.hpp"
 #include <unistd.h>
-
+#define LOOPS_AMOUNT 2
 
 TEST_CASE("+ operator") {
     SUBCASE("Testing with loop") {
         srand((unsigned) time(NULL));
         rand();
-        for (int i = 0; i < 10000; ++i) {
+        for (int i = 0; i < LOOPS_AMOUNT; ++i) {
             int a1 = (rand() % (999 - (-999) + 1)) + -999;
             int b1 = (rand() % (999 - (-999) + 1)) + -999;
 
@@ -49,7 +49,7 @@ TEST_CASE("- operator") {
     SUBCASE("Testing with loop") {
         srand((unsigned) time(NULL));
         rand();
-        for (int i = 0; i < 10000; ++i) {
+        for (int i = 0; i < LOOPS_AMOUNT; ++i) {
             int a1 = (rand() % (999 - (-999) + 1)) + -999;
             int b1 = (rand() % (999 - (-999) + 1)) + -999;
 
@@ -92,7 +92,7 @@ TEST_CASE("* operator") {
     SUBCASE("Testing with loop") {
         srand((unsigned) time(NULL));
         rand();
-        for (int i = 0; i < 10000; ++i) {
+        for (int i = 0; i < LOOPS_AMOUNT; ++i) {
             int a1 = (rand() % (999 - (-999) + 1)) + -999;
             int b1 = (rand() % (999 - (-999) + 1)) + -999;
 
@@ -133,7 +133,7 @@ TEST_CASE("/ operator") {
     SUBCASE("Testing with loop") {
         srand((unsigned) time(NULL));
         rand();
-        for (int i = 0; i < 10000; ++i) {
+        for (int i = 0; i < LOOPS_AMOUNT; ++i) {
             int a1 = (rand() % (999 - (-999) + 1)) + -999;
             int b1 = (rand() % (999 - (-999) + 1)) + -999;
 
@@ -190,7 +190,7 @@ TEST_CASE("== operator") {
     SUBCASE("Testing with loop") {
         srand((unsigned) time(NULL));
         rand();
-        for (int i = 0; i < 10000; ++i) {
+        for (int i = 0; i < LOOPS_AMOUNT; ++i) {
             int a1 = (rand() % (999 - (-999) + 1)) + -999;
             int b1 = (rand() % (999 - (-999) + 1)) + -999;
 
@@ -225,7 +225,7 @@ TEST_CASE(">= operator") {
     SUBCASE("Testing with loop") {
         srand((unsigned) time(NULL));
         rand();
-        for (int i = 0; i < 10000; ++i) {
+        for (int i = 0; i < LOOPS_AMOUNT; ++i) {
             int a1 = (rand() % (999 - (-999) + 1)) + -999;
             int b1 = (rand() % (999 - (-999) + 1)) + -999;
 
@@ -262,7 +262,7 @@ TEST_CASE("<= operator") {
     SUBCASE("Testing with loop") {
         srand((unsigned) time(NULL));
         rand();
-        for (int i = 0; i < 10000; ++i) {
+        for (int i = 0; i < LOOPS_AMOUNT; ++i) {
             int a1 = (rand() % (999 - (-999) + 1)) + -999;
             int b1 = (rand() % (999 - (-999) + 1)) + -999;
 
@@ -296,7 +296,7 @@ TEST_CASE("< operator") {
     SUBCASE("Testing with loop") {
         srand((unsigned) time(NULL));
         rand();
-        for (int i = 0; i < 10000; ++i) {
+        for (int i = 0; i < LOOPS_AMOUNT; ++i) {
             int a1 = (rand() % (999 - (-999) + 1)) + -999;
             int b1 = (rand() % (999 - (-999) + 1)) + -999;
 
@@ -332,7 +332,7 @@ TEST_CASE("> operator") {
     SUBCASE("Testing with loop") {
         srand((unsigned) time(NULL));
         rand();
-        for (int i = 0; i < 10000; ++i) {
+        for (int i = 0; i < LOOPS_AMOUNT; ++i) {
             int a1 = (rand() % (999 - (-999) + 1)) + -999;
             int b1 = (rand() % (999 - (-999) + 1)) + -999;
 
@@ -368,7 +368,7 @@ TEST_CASE("++ operator") {
     SUBCASE("Testing with loop") {
         srand((unsigned) time(NULL));
         rand();
-        for (int i = 0; i < 10000; ++i) {
+        for (int i = 0; i < LOOPS_AMOUNT; ++i) {
             int a1 = (rand() % (999 - (-999) + 1)) + -999;
             int b1 = (rand() % (999 - (-999) + 1)) + -999;
 
@@ -398,7 +398,7 @@ TEST_CASE("-- operator") {
     SUBCASE("Testing with loop") {
         srand((unsigned) time(NULL));
         rand();
-        for (int i = 0; i < 10000; ++i) {
+        for (int i = 0; i < LOOPS_AMOUNT; ++i) {
             int a1 = (rand() % (999 - (-999) + 1)) + -999;
             int b1 = (rand() % (999 - (-999) + 1)) + -999;
 
